@@ -4,7 +4,7 @@ import { uniqueId } from "./utils.js"
 var socket = io();
 socket.on('connect', function() {
     socket.emit('command', {player: playerID, event: "connect"});
-    console.log("USER CONNECTED").
+    console.log("USER CONNECTED");
 });
 
 const stick = new JoyStick('stick');
